@@ -1,4 +1,6 @@
 import React from 'react';
+import { getAllBooks, deleteBook } from "@/services/books";
+
 
 interface Page01Props {
 
