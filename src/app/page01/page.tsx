@@ -1,8 +1,7 @@
 import React from 'react';
 
 interface Page01Props {
-    title: string;
-    description: string;
+
 }
 
 const Page01: React.FC<Page01Props> = () => {
