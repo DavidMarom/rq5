@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npm install @tanstack/react-query --force"
+
   },
   "dependencies": {
     "@tanstack/react-query": "^5.59.20",
