@@ -1,9 +1,11 @@
+"use client";
 import type { Metadata } from "next";
-import "./globals.css";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-export const metadata: Metadata = {
-  title: "Testing react query 5",
-};
+import "./globals.css";
+import Link from "next/link";
+
+const queryClient = new QueryClient();
 
 export default function RootLayout({
   children,
@@ -13,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <QueryClientProvider client={queryClient}>
+          <Link href="/page01">Page01</Link> - <Link href="/page02">Page02</Link>
+          {children}
+        </QueryClientProvider>
       </body>
     </html>
   );
