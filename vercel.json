@@ -1,0 +1,5 @@
+{
+    "build": {
+        "command": "npm install @tanstack/react-query --force && npm run build"
+    }
+}
